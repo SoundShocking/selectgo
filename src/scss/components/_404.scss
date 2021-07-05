@@ -1,0 +1,120 @@
+.page-404,
+.error404 {
+  .wrapper {
+    background: url('../img/404_bg.png') center center no-repeat;
+    height: 1065px;
+    min-height: unset;
+
+    @include sm {
+      height: auto;
+      background: linear-gradient(180deg, #123652 0, #101a2d 100%);
+    }
+  }
+}
+
+.p-404 {
+  margin-top: 310px;
+
+  @include sm {
+    margin-top: 200px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1;
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    @include sm {
+      font-size: 48px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+    color: var(--color-white);
+  }
+
+  &__text {
+    color: var(--color-white);
+    font-size: 300px;
+    font-size: 20px;
+    line-height: 36px;
+    padding-left: 90px;
+    position: relative;
+    margin-top: 35px;
+    display: inline-block;
+
+    @include sm {
+      padding-left: 50px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 70px;
+      height: 2px;
+      background-color: var(--color-blue);
+
+      @include sm {
+        width: 30px;
+      }
+    }
+  }
+
+  &__cta {
+    position: relative;
+    margin-top: 85px;
+
+    @include sm {
+      margin-top: 50px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 300px;
+      top: -68px;
+      width: 125px;
+      height: 105px;
+      background: url('../img/button_shape.png');
+
+      @include md {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    background: linear-gradient(180deg, #3da9ef 0, #0282d5 100%);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+    height: 69px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    filter: drop-shadow(0 4px 0 #045d97);
+    transition: 0.3s;
+    line-height: 69px;
+
+    &:hover {
+      filter: drop-shadow(0 4px 0 #045d97)
+        drop-shadow(0 4px 5px rgba(2, 143, 234, 0.75));
+      transition: 0.3s;
+    }
+  }
+}

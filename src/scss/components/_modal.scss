@@ -1,0 +1,392 @@
+.modal {
+  &__close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--color-lynch);
+      transition: fill 0.3s;
+
+      @include lg {
+        fill: var(--color-black);
+      }
+    }
+
+    &:hover {
+      svg {
+        fill: var(--color-blue);
+      }
+    }
+
+    @include lg {
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+
+    span {
+      color: var(--color-blue);
+    }
+
+    @include sm {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-lynch);
+
+    @include sm {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__form {
+    margin-top: 60px;
+
+    &-group {
+      margin-bottom: 20px;
+    }
+
+    &-submit {
+      background: linear-gradient(180deg, #3da9ef 0, #0282d5 100%);
+      box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+      height: 69px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      padding: 0 50px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--color-white);
+      filter: drop-shadow(0 4px 0 #045d97);
+      transition: 0.3s;
+      margin-top: 40px;
+
+      &:hover {
+        filter: drop-shadow(0 4px 0 #045d97)
+          drop-shadow(0 4px 5px rgba(2, 143, 234, 0.75));
+      }
+    }
+
+    @include sm {
+      margin-top: 30px;
+    }
+  }
+
+  &__disclaimer {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-lynch);
+    margin-top: 30px;
+    padding-bottom: 30px;
+
+    &-link {
+      color: var(--color-blue);
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}
+
+.modal-order {
+  border-radius: 0;
+  border: none;
+
+  &__body {
+    padding: 60px 60px 0;
+
+    @include xs {
+      padding: 40px 15px 0;
+    }
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+}
+
+.modal-success {
+  border-radius: 0;
+  border: none;
+
+  &__body {
+    padding: 60px 30px;
+
+    @include xs {
+      padding: 40px 30px;
+    }
+  }
+
+  &__icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 40px;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--color-blue);
+    }
+  }
+}
+
+.modal-order-tariff {
+  border-radius: 0;
+  border: none;
+
+  &__body {
+    padding: 60px 60px 0;
+
+    @include xs {
+      padding: 40px 15px 0;
+    }
+  }
+
+  &__title {
+    span {
+      display: block;
+    }
+  }
+
+  &__subtitle {
+  }
+}
+
+.modal-order-search {
+  border-radius: 0;
+  border: none;
+
+  &__body {
+    padding: 60px 60px 0;
+
+    @include xs {
+      padding: 40px 15px 0;
+    }
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+}
+
+.modal-tariff-description {
+  border-radius: 0;
+  border: none;
+
+  &__body {
+    padding: 60px 50px 0;
+
+    @include sm {
+      padding: 60px 15px 0;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+
+    @include sm {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-lynch);
+    text-align: center;
+
+    @include sm {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-top: 60px;
+
+    @include md {
+      grid-template-columns: 1fr;
+    }
+
+    @include sm {
+      gap: 40px;
+    }
+  }
+
+  &__column {
+    &:nth-child(2) {
+      @include md {
+        display: none;
+      }
+    }
+  }
+
+  &__cta {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include sm {
+      padding-bottom: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    background: var(--color-blue);
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.25);
+    height: 69px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    filter: drop-shadow(0 4px 0 #045d97);
+    transition: 0.3s;
+
+    &:hover {
+      filter: drop-shadow(0 4px 0 #045d97)
+        drop-shadow(0 4px 5px rgba(2, 143, 234, 0.75));
+    }
+
+    &--red {
+      background: linear-gradient(180deg, #f71f3e 0, #f71f3e 100%);
+      filter: drop-shadow(0 4px 0 #b90c25);
+      margin-right: 50px;
+
+      &:hover {
+        filter: drop-shadow(0 4px 0 #b90c25)
+          drop-shadow(0 4px 5px rgba(#b90c25, 0.75));
+      }
+
+      @include sm {
+        margin-right: 0;
+      }
+    }
+
+    @include md {
+      max-width: 300px;
+    }
+
+    @include sm {
+      display: block;
+      max-width: unset;
+    }
+  }
+}
+
+.tariff-description {
+  &__title {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 28px;
+
+    @include sm {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    margin-top: 10px;
+  }
+
+  &__item {
+    padding-left: 20px;
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--color-lynch);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid var(--color-blue);
+
+      @include sm {
+        top: 5px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+
+      @include sm {
+        margin-bottom: 10px;
+      }
+    }
+
+    @include sm {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: block;
+    }
+  }
+}

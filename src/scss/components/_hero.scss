@@ -1,0 +1,210 @@
+.hero {
+  overflow: hidden;
+  padding-top: 250px;
+
+  &--calc {
+    height: 1006px;
+
+    .webp & {
+      background: url('../img/hero--calc_bg.webp') top center no-repeat;
+    }
+    .no-webp & {
+      background: url('../img/hero--calc_bg.jpg') top center no-repeat;
+    }
+
+    @include sm {
+      // height: 100vh;
+      height: auto;
+      // min-height: 480px;
+      background: linear-gradient(180deg, #123652 0, #101a2d 100%) !important;
+    }
+  }
+
+  &--order {
+    height: 1006px;
+
+    .webp & {
+      background: url('../img/hero--order_bg.webp') top center no-repeat;
+    }
+    .no-webp & {
+      background: url('../img/hero--order_bg.jpg') top center no-repeat;
+    }
+
+    @include sm {
+      // height: 100vh;
+      height: auto;
+      // min-height: 480px;
+      background: linear-gradient(180deg, #123652 0, #101a2d 100%) !important;
+    }
+  }
+
+  &--blog {
+    height: 1006px;
+
+    .webp & {
+      background: url('../img/hero--blog_bg.webp') top center no-repeat;
+    }
+    .no-webp & {
+      background: url('../img/hero--blog_bg.jpg') top center no-repeat;
+    }
+
+    @include sm {
+      // height: 100vh;
+      height: auto;
+      // min-height: 480px;
+      background: linear-gradient(180deg, #123652 0, #101a2d 100%) !important;
+    }
+  }
+
+  &--about {
+    height: 1006px;
+
+    .webp & {
+      background: url('../img/hero--about_bg.webp') top center no-repeat;
+    }
+    .no-webp & {
+      background: url('../img/hero--about_bg.jpg') top center no-repeat;
+    }
+
+    @include sm {
+      // height: 100vh;
+      height: auto;
+      // min-height: 480px;
+      background: linear-gradient(180deg, #123652 0, #101a2d 100%) !important;
+    }
+  }
+
+  &--reviews {
+    height: 1006px;
+
+    .webp & {
+      background: url('../img/hero--reviews_bg.webp') top center no-repeat;
+    }
+    .no-webp & {
+      background: url('../img/hero--reviews_bg.jpg') top center no-repeat;
+    }
+
+    @include sm {
+      // height: 100vh;
+      height: auto;
+      // min-height: 480px;
+      background: linear-gradient(180deg, #123652 0, #101a2d 100%);
+    }
+  }
+
+  &__container {
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      // width: calc(100vw - 80px);
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    padding-top: 70px;
+    color: var(--color-white);
+    margin: 0;
+
+    @include sm {
+      font-size: 28px;
+      // display: inline-block;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 50px;
+      width: 2px;
+      background-color: var(--color-blue);
+    }
+
+    &::after {
+      content: 'select&GO';
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 160px;
+      line-height: 1;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--color-white);
+      opacity: 0.02;
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  @include sm {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.breadcrumbs {
+  margin-top: 15px;
+  display: flex;
+  // justify-content: center;
+
+  &__list {
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 auto;
+  }
+
+  &__item {
+    position: relative;
+    color: var(--color-lynch);
+    white-space: nowrap;
+
+    & + & {
+      padding-left: 8px;
+
+      &::before {
+        content: '/';
+        padding-right: 8px;
+        float: left;
+      }
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+
+  &__current {
+  }
+}

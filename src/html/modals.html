@@ -1,0 +1,417 @@
+<div class="modal fade" id="modalOrder" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+    <div class="modal-content modal-order">
+      <div class="modal-body modal-order__body">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal__title modal-order__title">
+          заказать подбор
+        </div>
+        <div class="modal__subtitle modal-order__subtitle">
+          Заполните форму заявки и мы свяжемся с Вами!
+        </div>
+
+        <form class="modal__form">
+          <div class="modal__form-group">
+            <input type="text" class="input input--name modal__input" placeholder="Ваше имя">
+          </div>
+          <div class="modal__form-group">
+            <input type="tel" class="input input--phone modal__input" placeholder="+7 495 ___ __ __">
+          </div>
+          <div class="modal__form-group">
+            <input type="text" class="input input--pencil modal__input"
+              placeholder="Интересующая Вас марка авто, модель, год">
+          </div>
+          <div class="modal__form-group">
+            <input type="text" class="input input--email modal__input" placeholder="Ваш email для отправки отчета">
+          </div>
+
+          <button type="submit" class="modal__form-submit">
+            отправить заявку
+          </button>
+
+          <div class="modal__disclaimer">
+            Нажимая на кнопку отправить, Вы даете согласие на обработку персональных
+            данных и соглашаетесь с&nbsp;<a href="#" class="modal__disclaimer-link">политикой
+              конфиденциальности</a>.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalOrderSuccess" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+    <div class="modal-content modal-success">
+      <div class="modal-body modal-success__body">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-success__icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </div>
+
+        <div class="modal__title modal-success__title">
+          Заявка отправлена!
+        </div>
+
+        <div class="modal__subtitle modal-success__subtitle">
+          В ближайшее время мы свяжемся с Вами, ожидайте звонка.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalOrderTariff" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+    <div class="modal-content modal-order-tariff">
+      <div class="modal-body modal-order-tariff__body">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal__title modal-order-tariff__title">
+          заказать тариф <span>“Silver”</span>
+        </div>
+        <div class="modal__subtitle modal-order-tariff__subtitle">
+          Заполните форму заявки и мы свяжемся с Вами!
+        </div>
+
+        <form class="modal__form">
+          <div class="modal__form-group">
+            <input type="text" name="name" class="input input--name modal__input" placeholder="Ваше имя">
+          </div>
+          <div class="modal__form-group">
+            <input type="tel" name="phone" class="input input--phone modal__input" placeholder="+7 495 ___ __ __">
+          </div>
+          <div class="modal__form-group">
+            <input type="text" name="model" class="input input--pencil modal__input"
+              placeholder="Интересующая Вас марка авто, модель, год">
+          </div>
+          <div class="modal__form-group">
+            <input type="text" name="email" class="input input--email modal__input"
+              placeholder="Ваш email для отправки отчета">
+          </div>
+          <input type="hidden" name="tariff">
+
+          <button type="submit" class="modal__form-submit">
+            отправить заявку
+          </button>
+
+          <div class="modal__disclaimer">
+            Нажимая на кнопку отправить, Вы даете согласие на обработку персональных
+            данных и соглашаетесь с&nbsp;<a href="#" class="modal__disclaimer-link">политикой
+              конфиденциальности</a>.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalOrderSearch" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+    <div class="modal-content modal-order-search">
+      <div class="modal-body modal-order-search__body">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal__title">
+          Оставьте заявку
+        </div>
+        <div class="modal__subtitle">
+          Для поиска
+        </div>
+
+        <form class="modal__form">
+          <div class="modal__form-group">
+            <input type="text" class="input input--name modal__input" placeholder="Ваше имя">
+          </div>
+          <div class="modal__form-group">
+            <input type="tel" class="input input--phone modal__input" placeholder="+7 495 ___ __ __">
+          </div>
+          <div class="modal__form-group">
+            <input type="text" class="input input--pencil modal__input"
+              placeholder="Интересующая Вас марка авто, модель, год">
+          </div>
+
+          <button type="submit" class="modal__form-submit">
+            отправить заявку
+          </button>
+
+          <div class="modal__disclaimer">
+            Нажимая на кнопку отправить, Вы даете согласие на обработку персональных
+            данных и соглашаетесь с&nbsp;<a href="#" class="modal__disclaimer-link">политикой
+              конфиденциальности</a>.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalTariffDescription" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down modal-lg">
+    <div class="modal-content modal-tariff-description">
+      <div class="modal-body modal-tariff-description__body">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-tariff-description__subtitle">
+          Выездная диагностика
+        </div>
+        <div class="modal-tariff-description__title">
+          тариф "Разовый"
+        </div>
+
+        <ul class="modal-tariff-description__list">
+          <li class="modal-tariff-description__item">
+            Оформление заявки на предоставление услуги «разовая диагностика»
+          </li>
+          <li class="modal-tariff-description__item">
+            Выезд специалиста с оборудованием и оформление договора
+          </li>
+          <li class="modal-tariff-description__item">
+            Осмотр:
+
+            <ul class="tariff-description__list">
+              <li class="tariff-description__item">
+                кузова на предмет проведения кузовных работ
+              </li>
+              <li class="tariff-description__item">
+                компьютерная диагностика
+              </li>
+              <li class="tariff-description__item">
+                проверка ходовой части
+              </li>
+              <li class="tariff-description__item">
+                юридическая проверка документов
+              </li>
+              <li class="tariff-description__item">
+                составление отчёта о тех. состоянии автомобиля
+              </li>
+            </ul>
+          </li>
+          <li class="modal-tariff-description__item">
+            Аргументированный торг с продавцом, принятие решения о покупке
+          </li>
+          <li class="modal-tariff-description__item">
+            Помощь с оформлением документов, или создание заявки на подбор автомобиля
+          </li>
+        </ul>
+
+        <button class="button modal-tariff-description__button">
+          узнайте подробнее
+        </button>
+
+        <div class="social social--hover-blue modal-tariff-description__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use xlink:href="img/sprite.svg#viber"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalTariffDescription1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-xl-down modal-xl">
+    <div class="modal-content modal-tariff-description">
+      <div class="modal-body modal-tariff-description__body">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-tariff-description__subtitle">
+          Выездная диагностика
+        </div>
+        <div class="modal-tariff-description__title">
+          тариф "Новый"
+        </div>
+
+        <div class="modal-tariff-description__grid">
+          <div class="modal-tariff-description__column tariff-description">
+            <div class="tariff-description__title">
+              В рамках услуги Вы получите:
+            </div>
+
+            <ul class="tariff-description__list">
+              <li class="tariff-description__item">
+                Экономию времени
+              </li>
+              <li class="tariff-description__item">
+                Лучшее предложение на рынке с максимальной выгодой
+              </li>
+              <li class="tariff-description__item">
+                Торг с продавцом (дилером), принятие решения о покупке
+              </li>
+              <li class="tariff-description__item">
+                Помощь с оформлением документов, или создание заявки на подбор автомобиля
+              </li>
+              <li class="tariff-description__item">
+                Бесплатную установку дополнительного оборудования или скидки на них
+              </li>
+              <li class="tariff-description__item">
+                Проверенный автомобиль без недостатков и диагностический лист с результатами проверки автомобиля;
+              </li>
+              <li class="tariff-description__item">
+                Гарантию на нашу услуги и результаты диагностики автомобиля.
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal-tariff-description__column tariff-description">
+            <div class="tariff-description__image">
+              <img src="img/tariff-description-1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="modal-tariff-description__column tariff-description">
+            <div class="tariff-description__title">
+              В ходе осмотра проверяем:
+            </div>
+
+            <ul class="tariff-description__list">
+              <li class="tariff-description__item">
+                Кузова на предмет проведения кузовных работ
+              </li>
+              <li class="tariff-description__item">
+                Документы и юридическую часть, VIN-номер, Маркировки
+              </li>
+              <li class="tariff-description__item">
+                Кузов и скрытые полости
+              </li>
+              <li class="tariff-description__item">
+                Подкапотное пространство
+              </li>
+              <li class="tariff-description__item">
+                Состояние салона
+              </li>
+              <li class="tariff-description__item">
+                Ходовую часть
+              </li>
+              <li class="tariff-description__item">
+                Блоки автомобиля и электрику
+              </li>
+              <li class="tariff-description__item">
+                Подушки безопасности
+              </li>
+              <li class="tariff-description__item">
+                Достоверность заявленного пробега
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal-tariff-description__column tariff-description">
+            <div class="tariff-description__title">
+              Что ВЫ получаете после диагностики:
+            </div>
+
+            <ul class="tariff-description__list">
+              <li class="tariff-description__item">
+                150 - 200 фотографий автомобиля
+              </li>
+              <li class="tariff-description__item">
+                Видеообзор автомобиля
+              </li>
+              <li class="tariff-description__item">
+                Фотографии днища автомобиля
+              </li>
+              <li class="tariff-description__item">
+                Диагностический лист
+              </li>
+              <li class="tariff-description__item">
+                Отображение всех деффектов
+              </li>
+              <li class="tariff-description__item">
+                Резюме о целесообразности покупки
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-tariff-description__cta">
+          <button class="modal-tariff-description__button modal-tariff-description__button--red">
+            оплатить заказ
+          </button>
+
+          <button class="modal-tariff-description__button modal-tariff-description__button--blue">
+            оформить заявку
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalSubscribeSuccess" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+    <div class="modal-content modal-subsribe">
+      <div class="modal-body modal-subsribe__body">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-success__icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#email"></use>
+          </svg>
+        </div>
+
+        <div class="modal__title modal-success__title">
+          Вы успешно подписались на рассылку!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

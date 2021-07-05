@@ -1,0 +1,66 @@
+.order {
+}
+
+.prepayment-and-order {
+  margin-top: -460px;
+
+  @include sm {
+    margin-top: 0;
+  }
+
+  &__container {
+    background-color: var(--color-white);
+    box-shadow: 0 20px 50px rgba(7, 21, 64, 0.1);
+    padding: 80px 45px 130px;
+
+    @include lg {
+      padding: 40px 15px;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+
+    @include sm {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+
+  &__grid {
+    margin-top: 50px;
+  }
+
+  &__button {
+    background: linear-gradient(180deg, #3da9ef 0, #0282d5 100%);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+    height: 69px;
+    text-align: center;
+    display: block;
+    padding: 0 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    filter: drop-shadow(0 4px 0 #045d97);
+    transition: 0.3s;
+    margin: 70px auto 0;
+
+    &:hover {
+      filter: drop-shadow(0 4px 0 #045d97)
+        drop-shadow(0 4px 5px rgba(2, 143, 234, 0.75));
+    }
+  }
+
+  .tariff__info {
+    transform: translateY(0);
+  }
+}
