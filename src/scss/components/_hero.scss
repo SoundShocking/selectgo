@@ -92,6 +92,22 @@
     }
   }
 
+  &--work {
+    height: 1006px;
+
+    .webp & {
+      background: url('../img/hero--work_bg.webp') top center no-repeat;
+    }
+    .no-webp & {
+      background: url('../img/hero--work_bg.jpg') top center no-repeat;
+    }
+
+    @include sm {
+      height: auto;
+      background: linear-gradient(180deg, #123652 0, #101a2d 100%);
+    }
+  }
+
   &__container {
     @include sm {
       display: flex;

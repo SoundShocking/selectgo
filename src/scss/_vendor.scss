@@ -1,7 +1,7 @@
 @import 'normalize.css/normalize';
-// @import 'nouislider/distribute/nouislider';
-// @import 'custom-select/src/css/custom-select';
-// @import 'swiper/swiper-bundle';
+@import 'nouislider/distribute/nouislider';
+@import 'custom-select/src/css/custom-select';
+@import 'swiper/swiper-bundle';
 
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
@@ -10,5 +10,6 @@
 @import 'bootstrap/scss/_close';
 @import 'bootstrap/scss/_modal';
 @import 'bootstrap/scss/_offcanvas';
+@import 'bootstrap/scss/_nav';
 // @import 'bootstrap/scss/_spinners';
 @import 'bootstrap/scss/_transitions';

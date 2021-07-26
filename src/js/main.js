@@ -1,10 +1,11 @@
 import './components/calc'
-import Swiper, { Navigation, EffectCoverflow, Lazy } from 'swiper';
+import Swiper, { Navigation, EffectCoverflow, Lazy, Thumbs } from 'swiper';
 import Modal from 'bootstrap/js/dist/modal';
 import Offcanvas from 'bootstrap/js/dist/offcanvas';
 import Collapse from 'bootstrap/js/dist/collapse';
+import Tabs from 'bootstrap/js/dist/tab';
 
-Swiper.use([Navigation, EffectCoverflow, Lazy]);
+Swiper.use([Navigation, EffectCoverflow, Lazy, Thumbs]);
 
 const $modalOrder = document.getElementById('modalOrder');
 const $modalOrderSuccess = document.getElementById('modalOrderSuccess');
@@ -13,17 +14,17 @@ const $modalOrderSearch = document.getElementById('modalOrderSearch');
 const $modalTariffDescription = document.getElementById('modalTariffDescription');
 const $modalSubscribeSuccess = document.getElementById('modalSubscribeSuccess');
 
-const modalOrder = new Modal($modalOrder);
-const modalOrderSuccess = new Modal($modalOrderSuccess);
-const modalOrderTariff = new Modal($modalOrderTariff);
-const modalOrderSearch = new Modal($modalOrderSearch);
-const modalTariffDescription = new Modal($modalTariffDescription);
-const modalSubscribeSuccess = new Modal($modalSubscribeSuccess);
+// const modalOrder = new Modal($modalOrder);
+// const modalOrderSuccess = new Modal($modalOrderSuccess);
+// const modalOrderTariff = new Modal($modalOrderTariff);
+// const modalOrderSearch = new Modal($modalOrderSearch);
+// const modalTariffDescription = new Modal($modalTariffDescription);
+// const modalSubscribeSuccess = new Modal($modalSubscribeSuccess);
 
-const offcanvasCall = new Offcanvas(document.getElementById('offcanvasCall'));
-const offcanvasQuestion = new Offcanvas(document.getElementById('offcanvasQuestion'));
-const offcanvasContacts = new Offcanvas(document.getElementById('offcanvasContacts'));
-const offcanvasMenu = new Offcanvas(document.getElementById('offcanvasMenu'));
+// const offcanvasCall = new Offcanvas(document.getElementById('offcanvasCall'));
+// const offcanvasQuestion = new Offcanvas(document.getElementById('offcanvasQuestion'));
+// const offcanvasContacts = new Offcanvas(document.getElementById('offcanvasContacts'));
+// const offcanvasMenu = new Offcanvas(document.getElementById('offcanvasMenu'));
 
 // modalOrder.show();
 // modalOrderSuccess.show();
@@ -36,6 +37,9 @@ const instagramSlider = document.querySelector('.instagram__slider');
 const reviewsSlider = document.querySelector('.reviews__slider');
 const homeServiceSlider = document.querySelector('.home-services__slider');
 const $tariffButtons = document.querySelectorAll('.tariff__button');
+
+const $workSlider = document.querySelector('.work__slider');
+const $workThumbsSlider = document.querySelector('.work-thumbs__slider');
 
 if (instagramSlider) {
   new Swiper(instagramSlider, {
@@ -89,6 +93,29 @@ if (reviewsSlider) {
   })
 }
 
+if ($workSlider && $workThumbsSlider) {
+  const workThumbsSlider = new Swiper($workThumbsSlider, {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    // freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  })
+
+  const workSlider = new Swiper($workSlider, {
+    spaceBetween: 10,
+    navigation: {
+      prevEl: '.work__navigation-prev',
+      nextEl: '.work__navigation-next',
+    },
+    thumbs: {
+      swiper: workThumbsSlider
+    }
+  })
+
+
+}
+
 if (homeServiceSlider) {
   new Swiper(homeServiceSlider, {
     loop: true,
@@ -104,26 +131,6 @@ if (homeServiceSlider) {
     }
   })
 }
-
-// document.querySelector('.offcanvas-call__toggle').addEventListener('click', e => {
-//   e.stopPropagation();
-//   offcanvasCall.toggle();
-// })
-
-// document.querySelector('.offcanvas-question__toggle').addEventListener('click', e => {
-//   e.stopPropagation();
-//   offcanvasQuestion.toggle();
-// })
-
-// document.querySelector('.offcanvas-contacts__toggle').addEventListener('click', e => {
-//   e.stopPropagation();
-//   offcanvasContacts.toggle();
-// })
-
-// document.querySelector('.header__burger').addEventListener('click', e => {
-//   e.stopPropagation();
-//   offcanvasMenu.toggle();
-// })
 
 if ($tariffButtons.length) {
   $tariffButtons.forEach(el => {
@@ -188,10 +195,10 @@ if ($amenuTrigger && $amenu) {
   })
 
   document.addEventListener('click', e => {
-    console.log(e.target);
+    // console.log(e.target);
     const closest = e.target.closest('.amenu');
-    console.log('closest: ', closest);
-    console.log($amenu.classList.contains('amenu--active'))
+    // console.log('closest: ', closest);
+    // console.log($amenu.classList.contains('amenu--active'))
     if (!closest && $amenu.classList.contains('amenu--active')) {
       $amenu.classList.remove('amenu--active')
       $amenuTrigger.classList.remove('amenu__trigger--active')
