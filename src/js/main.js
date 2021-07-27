@@ -96,10 +96,15 @@ if (reviewsSlider) {
 if ($workSlider && $workThumbsSlider) {
   const workThumbsSlider = new Swiper($workThumbsSlider, {
     spaceBetween: 10,
-    slidesPerView: 5,
+    slidesPerView: 4,
     // freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 5
+      }
+    }
   })
 
   const workSlider = new Swiper($workSlider, {
@@ -112,8 +117,6 @@ if ($workSlider && $workThumbsSlider) {
       swiper: workThumbsSlider
     }
   })
-
-
 }
 
 if (homeServiceSlider) {

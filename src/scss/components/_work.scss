@@ -3,16 +3,34 @@
   position: relative;
   z-index: 1;
 
+  @include sm {
+    margin-top: 0;
+  }
+
   &__container {
     padding: 80px 45px 130px;
     background-color: var(--color-white);
     box-shadow: 0 20px 50px rgba(7, 21, 64, 0.1);
+
+    @include lg {
+      padding: 50px 20px 100px;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 50% calc(50% - 50px);
     gap: 50px;
+
+    @include md {
+      // grid-template-columns: 100%;
+      grid-template-columns: calc(50% - 30px) 50%;
+      gap: 30px;
+    }
+
+    @include sm {
+      grid-template-columns: 100%;
+    }
   }
 
   &__left {
@@ -145,6 +163,10 @@
 .work-stats {
   margin: 60px 0 50px;
 
+  @include md {
+    margin: 30px 0;
+  }
+
   &__list {
   }
 
@@ -159,6 +181,11 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+
+    @include sm {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -166,17 +193,13 @@
   &__item {
     display: flex;
     align-items: center;
-    font-size: 20px;
-    line-height: 30px;
-
-    span {
-      font-weight: 700;
-      text-transform: uppercase;
-      display: block;
-    }
 
     &:not(:last-child) {
       margin-bottom: 50px;
+
+      @include md {
+        margin-bottom: 35px;
+      }
     }
   }
 
@@ -218,6 +241,22 @@
       fill: var(--color-white);
     }
   }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+
+    span {
+      font-weight: 700;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    @include sm {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
 }
 
 .work-tabs {
@@ -227,44 +266,18 @@
       align-items: center;
       justify-content: center;
       border-bottom: 1px solid #ccd7e9;
+
+      @include sm {
+        flex-direction: column;
+      }
     }
 
     &-item {
-      display: flex;
-      align-items: center;
-      padding-bottom: 15px;
-      text-transform: uppercase;
-      font-weight: 700;
-      cursor: pointer;
-      border-bottom: 2px solid transparent;
-      color: var(--color-lynch);
-      transition: 0.3s;
-
-      svg {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-        fill: currentColor;
-      }
-
       &:not(:last-child) {
         margin-right: 65px;
-      }
 
-      &--active {
-        color: var(--color-black);
-        border-color: var(--color-blue);
-
-        svg {
-          fill: var(--color-blue);
-        }
-      }
-
-      &:hover {
-        color: var(--color-blue);
-
-        svg {
-          fill: var(--color-blue);
+        @include sm {
+          margin: 0 0 15px;
         }
       }
     }
@@ -272,7 +285,78 @@
 
   &__body {
     .tab-pane {
-      padding: 50px 0;
+      padding: 50px 0 0;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: var(--color-lynch);
+    transition: 0.3s;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      fill: currentColor;
+    }
+
+    &--active,
+    &.active {
+      color: var(--color-black);
+      border-color: var(--color-blue);
+
+      svg {
+        fill: var(--color-blue);
+      }
+    }
+
+    &:hover {
+      color: var(--color-blue);
+
+      svg {
+        fill: var(--color-blue);
+      }
+    }
+  }
+}
+
+.work-tab {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border: 2px solid var(--color-blue);
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 0;
     }
   }
 }
