@@ -109,8 +109,11 @@
     border-radius: 8px;
     overflow: hidden;
 
-    img {
+    img,
+    picture {
       display: block;
+      max-width: 100%;
+      height: auto;
     }
   }
 
@@ -119,6 +122,37 @@
 
   &__tabs {
     margin-top: 100px;
+  }
+
+  &__modal-btn {
+    margin-top: 60px;
+    background: linear-gradient(180deg, #3da9ef 0, #0282d5 100%);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+    height: 69px;
+    text-align: center;
+    padding: 0 100px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    filter: drop-shadow(0 4px 0 #045d97);
+    transition: 0.3s;
+
+    &:hover {
+      filter: drop-shadow(0 4px 0 #045d97)
+        drop-shadow(0 4px 5px rgba(2, 143, 234, 0.75));
+    }
+
+    @include sm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+    }
   }
 }
 
@@ -154,8 +188,11 @@
       }
     }
 
-    img {
+    img,
+    picture {
       display: block;
+      max-width: 100%;
+      height: auto;
     }
   }
 }
@@ -337,10 +374,13 @@
     line-height: 24px;
   }
 
-  &__list {
+  &__list,
+  ul {
+    margin-bottom: 20px;
   }
 
-  &__item {
+  &__item,
+  li {
     position: relative;
     padding-left: 20px;
 

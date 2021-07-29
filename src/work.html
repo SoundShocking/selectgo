@@ -176,7 +176,7 @@
                 <li class="work-stats-icon__item">
                   <div class="work-stats-icon__icon">
                     <svg>
-                      <use xlink:href="img/sprite.svg#exclamation_point"></use>
+                      <use xlink:href="img/sprite.svg#exclamation-mark"></use>
                     </svg>
                   </div>
                   <div class="work-stats-icon__text">Автомобиль рекомендован и приобретен клиентом</div>
@@ -186,33 +186,51 @@
           </div>
 
           <div class="work__tabs work-tabs">
-            <div class="work-tabs__header">
-              <ul class="work-tabs__header-list">
-                <li class="work-tabs__header-item work-tabs__header-item--active">
+            <ul class="nav work-tabs__header-list" role="tablist">
+              <li class="nav-item work-tabs__header-item" role="presentation">
+                <button class="work-tabs__button active" id="home-tab" data-bs-toggle="tab" data-bs-target="#plus"
+                  type="button" role="tab" aria-controls="home" aria-selected="true">
                   <svg>
                     <use xlink:href="img/sprite.svg#plus"></use>
                   </svg>
                   Достоинства
-                </li>
-                <li class="work-tabs__header-item" data-bs-toggle="tab" data-bs-target="#minus">
+                </button>
+              </li>
+              <li class="nav-item work-tabs__header-item" role="presentation">
+                <button class="work-tabs__button" id="profile-tab" data-bs-toggle="tab" data-bs-target="#minus"
+                  type="button" role="tab" aria-controls="profile" aria-selected="false">
                   <svg>
                     <use xlink:href="img/sprite.svg#minus"></use>
                   </svg>
                   недостатки
-                </li>
-                <li class="work-tabs__header-item" data-bs-toggle="tab" data-bs-target="#star">
+                </button>
+              </li>
+              <li class="nav-item work-tabs__header-item" role="presentation">
+                <button class="work-tabs__button" id="messages-tab" data-bs-toggle="tab" data-bs-target="#star"
+                  type="button" role="tab" aria-controls="messages" aria-selected="false">
                   <svg>
                     <use xlink:href="img/sprite.svg#tab-star"></use>
                   </svg>
                   рекомендации
-                </li>
-              </ul>
-            </div>
+                </button>
+              </li>
+            </ul>
 
             <div class="work-tabs__body tab-content">
-              <div class="tab-pane active" id="plus" role="tabpanel">plus</div>
-              <div class="tab-pane" id="minus" role="tabpanel">minus</div>
-              <div class="tab-pane" id="star" role="tabpanel">star</div>
+              <div class="tab-pane work-tab active" id="plus" role="tabpanel">
+                <ul class="work-tab__list">
+                  <li class="work-tab__item">Оригинальный, подтвержденный общим состоянием и компьютерной диагностикой
+                    пробег;</li>
+                  <li class="work-tab__item">Родные заводские стекла и оптика;</li>
+                  <li class="work-tab__item">Салон в хорошем состоянии, без дефектов и неприятных запахов;</li>
+                  <li class="work-tab__item">Активные ошибки в ЭБУ отсутствуют;</li>
+                  <li class="work-tab__item">Все параметры ЭБУ в заданных значениях;</li>
+                  <li class="work-tab__item">При тест-драйве посторонние звуки в элементах подвески отсутствуют;</li>
+                  <li class="work-tab__item">На всех узлах и агрегатах отсутствуют течи технических жидкостей.</li>
+                </ul>
+              </div>
+              <div class="tab-pane work-tab" id="minus" role="tabpanel">minus</div>
+              <div class="tab-pane work-tab" id="star" role="tabpanel">star</div>
             </div>
           </div>
         </div>
