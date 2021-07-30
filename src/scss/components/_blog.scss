@@ -308,3 +308,50 @@
   &__item {
   }
 }
+
+.archive-work {
+  margin-top: -460px;
+
+  @include sm {
+    margin-top: 0;
+  }
+
+  &__container {
+    padding: 75px 25px 130px;
+    background-color: var(--color-white);
+    box-shadow: 0 20px 50px rgba(7, 21, 64, 0.1);
+
+    @include lg {
+      padding: 75px 15px 130px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__list {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include lg {
+      gap: 15px;
+    }
+
+    @include md {
+      margin-top: 50px;
+    }
+
+    @include sm {
+      margin-top: 30px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+  }
+}
