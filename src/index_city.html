@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SelectGO</title>
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <div class="wrapper">
+    @include('html/header.html')
+
+    <main class="main">
+      <section class="home-hero">
+        <div class="container home-hero__container">
+          <div class="home-hero__subtitle" data-aos="fade-right" data-aos-delay="300">
+            Помощь в поиске и подборе автомобилей
+          </div>
+          <h1 class="home-hero__title" data-aos="fade-right" data-aos-delay="600">
+            Автоподбор под ключ
+          </h1>
+
+          <div class="home-hero__cta" data-aos="fade-right" data-aos-delay="900">
+            <button class="home-hero__button" data-bs-toggle="modal" data-bs-target="#modalOrder">
+              заказать подбор
+            </button>
+          </div>
+
+          <div class="home-hero__scroll">
+            <svg>
+              <use xlink:href="img/sprite.svg#mouse"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-services">
+        <div class="container home-services__container">
+          <div class="home-services__carousel">
+            <div class="home-services__slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="home-services__slide">
+                    <div class="home-services__image">
+                      <img src="img/inst1.jpg" alt="">
+                      <div class="home-services__price">
+                        2000 ₽
+                      </div>
+                    </div>
+
+                    <div class="home-services__cta">
+                      <a href="#" class="home-services__button">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-services__slide">
+                    <div class="home-services__image">
+                      <img src="img/inst1.jpg" alt="">
+                      <div class="home-services__price">
+                        2000 ₽
+                      </div>
+                    </div>
+
+                    <div class="home-services__cta">
+                      <a href="#" class="home-services__button">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-services__slide">
+                    <div class="home-services__image">
+                      <img src="img/inst1.jpg" alt="">
+                      <div class="home-services__price">
+                        2000 ₽
+                      </div>
+                    </div>
+
+                    <div class="home-services__cta">
+                      <a href="#" class="home-services__button">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-services__slide">
+                    <div class="home-services__image">
+                      <img src="img/inst1.jpg" alt="">
+                      <div class="home-services__price">
+                        2000 ₽
+                      </div>
+                    </div>
+
+                    <div class="home-services__cta">
+                      <a href="#" class="home-services__button">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-services__slide">
+                    <div class="home-services__image">
+                      <img src="img/inst1.jpg" alt="">
+                      <div class="home-services__price">
+                        2000 ₽
+                      </div>
+                    </div>
+
+                    <div class="home-services__cta">
+                      <a href="#" class="home-services__button">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-seo-city">
+        <div class="container home-seo-city__container">
+          <div class="home-seo-city__grid">
+            <div class="home-seo-city__left">
+              <div class="home-seo-city__name">
+                Москва
+              </div>
+              <div class="home-seo-city__map">
+                <img src="img/map--moscow.png" alt="">
+              </div>
+            </div>
+
+            <div class="home-seo-city__right">
+              <div class="home-seo-city__text">
+                <p>
+                  Мы подберем Вам автомобиль Mini Cooper, без увеличения бюджета, в срок до 14 дней, исключительно по
+                  Вашим параметрам. Наша услуга окупается полностью или частично с торга, в 99% обращений. Мы
+                  гарантируем,
+                  выкуп автомобиля по цене купленной Вами, если наш подбор, не позволит Вам пользоваться автомобилем
+                  после покупки.
+                </p>
+
+                <p>Все свои гарантии, мы закрепляем в договоре.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-we-check">
+        <div class="container how-we-check__container">
+          <div class="title how-we-check__title" data-aos="zoom-in-up">
+            Как и что мы проверяем
+          </div>
+          <div class="subtitle how-we-check__subtitle" data-aos="zoom-in-up">
+            Проверка технического состояния и юридической чистоты
+          </div>
+
+          <ul class="how-we-check__list" data-aos="fade-up" data-aos-offset="200">
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check1.svg">
+              </div>
+              <div class="check__text">
+                Пробег авто и его реальность
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check2.svg">
+              </div>
+              <div class="check__text">
+                Проверка двигателя
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check3.svg">
+              </div>
+              <div class="check__text">
+                Проверка подвески и тормозов
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check4.svg">
+              </div>
+              <div class="check__text">
+                Проверка КПП
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check5.svg">
+              </div>
+              <div class="check__text">
+                Проверка электронных систем
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check6.svg">
+              </div>
+              <div class="check__text">
+                Проверка подушек безопасности
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check7.svg">
+              </div>
+              <div class="check__text">
+                Проверка по закрытым платным базам данных
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check8.svg">
+              </div>
+              <div class="check__text">
+                Проверка на кредиты, штрафы и ограничения
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check9.svg">
+              </div>
+              <div class="check__text">
+                Антикриминальная проверка
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check10.svg">
+              </div>
+              <div class="check__text">
+                Маркировка, VIN‑номера и документы
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check11.svg">
+              </div>
+              <div class="check__text">
+                Проверка выхлопной системы
+              </div>
+            </li>
+
+            <li class="how-we-check__item check">
+              <div class="check__icon">
+                <img src="img/how-we-check12.svg">
+              </div>
+              <div class="check__text">
+                Проверка состояния кузова
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="services services--home-seo">
+        <div class="container services__container">
+          <h2 class="title services__title" data-aos="zoom-in-up">
+            Наши услуги
+          </h2>
+          <div class="subtitle services__subtitle" data-aos="zoom-in-up">
+            Что мы предлагаем
+          </div>
+
+          <div class="services__grid">
+            <div class="services__item" data-aos="fade-right">
+              <div class="service">
+                <div class="service__icon">
+                  <img src="img/service1.svg" alt="">
+                </div>
+                <div class="service__text">
+                  Услуги по официальному договору
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item" data-aos="fade-right" data-aos-delay="300">
+              <div class="service">
+                <div class="service__icon">
+                  <img src="img/service2.svg" alt="">
+                </div>
+                <div class="service__text">
+                  Проверка автомобиля по более чем 130 параметрам
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item" data-aos="fade-right" data-aos-delay="600">
+              <div class="service">
+                <div class="service__icon">
+                  <img src="img/service3.svg" alt="">
+                </div>
+                <div class="service__text">
+                  Полная юридическая проверка автомобиля
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item" data-aos="fade-left" data-aos-delay="1500">
+              <div class="service">
+                <div class="service__icon">
+                  <img src="img/service4.svg" alt="">
+                </div>
+                <div class="service__text">
+                  Выездная диагностика
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item" data-aos="fade-left" data-aos-delay="1200">
+              <div class="service">
+                <div class="service__icon">
+                  <img src="img/service5.svg" alt="">
+                </div>
+                <div class="service__text">
+                  Сопровождение сделки
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item" data-aos="fade-down" data-aos-delay="900">
+              <div class="service">
+                <div class="service__icon">
+                  <img src="img/service6.svg" alt="">
+                </div>
+                <div class="service__text">
+                  Профессиональный торг
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__bottom" data-aos="fade-right">
+            <div class="services__bottom-title">
+              МЫ РАБОТАЕМ С 2015 ГОДА
+            </div>
+            <div class="services__bottom-subtitle">
+              и уже помогли выгодно купить автомобиль тысячам клиентов!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tariffs tariffs--home-seo">
+        <div class="container tariffs__container">
+          <h2 class="title tariffs__title tariffs__title--home-seo">
+            Наши тарифы
+          </h2>
+
+          <div class="tariffs__grid">
+            <div class="tariffs__item" data-aos="zoom-in">
+              <div class="tariff">
+                <div class="tariff__info">
+                  <div class="tariff__name">
+                    Новый
+                  </div>
+                  <div class="tariff__text">
+                    Подбор нового авто от
+                  </div>
+                  <div class="tariff__bottom">
+                    <div class="tariff__price">
+                      5000 ₽
+                    </div>
+                  </div>
+                  <button class="button tariff__button">
+                    Заказать
+                  </button>
+                </div>
+                <div class="tariff__icons">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#fire"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="tariffs__item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="tariff">
+                <div class="tariff__info">
+                  <div class="tariff__name">
+                    Разовый
+                  </div>
+                  <div class="tariff__text">
+                    Выездная диагностика от
+                  </div>
+                  <div class="tariff__bottom">
+                    <div class="tariff__price">
+                      2000 ₽
+                    </div>
+                  </div>
+                  <button class="button tariff__button">
+                    Заказать
+                  </button>
+                </div>
+                <div class="tariff__icons">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="tariffs__item" data-aos="zoom-in">
+              <div class="tariff">
+                <div class="tariff__info">
+                  <div class="tariff__name">
+                    На продажу
+                  </div>
+                  <div class="tariff__text">
+                    Предпродажная оценка от
+                  </div>
+                  <div class="tariff__bottom">
+                    <div class="tariff__price">
+                      2000 ₽
+                    </div>
+                  </div>
+                  <button class="button tariff__button">
+                    Заказать
+                  </button>
+                </div>
+                <div class="tariff__icons">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="tariffs__item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="tariff">
+                <div class="tariff__info">
+                  <div class="tariff__name">
+                    На день
+                  </div>
+                  <div class="tariff__text">
+                    Эксперт на день от
+                  </div>
+                  <div class="tariff__bottom">
+                    <div class="tariff__price">
+                      2000 ₽
+                    </div>
+                  </div>
+                  <button class="button tariff__button">
+                    Заказать
+                  </button>
+                </div>
+                <div class="tariff__icons">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="tariffs__item" data-aos="zoom-in">
+              <div class="tariff">
+                <div class="tariff__info">
+                  <div class="tariff__name">
+                    Помощь в покупке
+                  </div>
+                  <div class="tariff__text">
+                    Подбор нового авто от
+                  </div>
+                  <div class="tariff__bottom">
+                    <div class="tariff__price">
+                      6000 ₽
+                    </div>
+                  </div>
+                  <button class="button tariff__button">
+                    Заказать
+                  </button>
+                </div>
+                <div class="tariff__icons">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="tariffs__item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="tariff">
+                <div class="tariff__info">
+                  <div class="tariff__name">
+                    Проверка авто
+                  </div>
+                  <div class="tariff__text">
+                    Диагностика от
+                  </div>
+                  <div class="tariff__bottom">
+                    <div class="tariff__price">
+                      6000 ₽
+                    </div>
+                  </div>
+                  <button class="button tariff__button">
+                    Заказать
+                  </button>
+                </div>
+                <div class="tariff__icons">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="tariffs__item" data-aos="zoom-in" data-aos-delay="600">
+              <div class="tariff">
+                <div class="tariff__info">
+                  <div class="tariff__name">
+                    Под ключ
+                  </div>
+                  <div class="tariff__text">
+                    Полный комплекс услуг от
+                  </div>
+                  <div class="tariff__bottom">
+                    <div class="tariff__price">
+                      10000 ₽
+                    </div>
+                  </div>
+                  <button class="button tariff__button">
+                    Заказать
+                  </button>
+                </div>
+                <div class="tariff__icons">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtitle tarrifs__subtitle tariffs__subtitle--home-seo" data-aos="zoom-in-up">
+            Не рискуйте — закажите подбор автомобиля экспертам
+          </div>
+        </div>
+      </section>
+
+      <section class="auto-selection-city">
+        <div class="container auto-selection-city__container">
+          <h2 class="title auto-selection-city__title">
+            Автоподбор в Москве
+          </h2>
+
+          <div class="auto-selection-city__text">
+            <p>
+              Задумали покупку, автомобиля Mini? Хотите знать почему эта марка так популярна среди автолюбителей,
+              которые выбирают качественные ,британские автомобили,которые так любят в нашей стране, и почему
+              будущие владельцы обращаются в автоподбор за помощью. Mini - очень интересная машина, в нашей
+              стране, эта марка, пользуется спросом у определенного числа автолюбителей.
+            </p>
+
+            <p>
+              Mini специализируется на выпуске малогабаритных, но, в то же время мощных автомобилей. Такие модели
+              как: Mini Cooper, Countryman, Clubman, Cabrio, Pace, Roadster, Paceman - хорошие и качественные
+              автомобили, но, в Российских реалиях, найти достойный экземпляр не так то легко, если Вы не обладаете
+              техническими и юридическими знаниями, то это, становится большой проблемой для потенциального
+              покупателя. Самые популярные моменты, которые наблюдаются при подборе автомобиля марки Мини,
+              это сокрытие юридической чистоты, утаивание от баз данных ДТП, скрученные пробеги, перебитые
+              номера. Из всего перечисленного, одним из самых страшных моментов, является сокрытие информации
+              о дтп, кузове автомобиля, его геометрии, и системы безопасности.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="car-selection">
+        <div class="container car-selection__container">
+          <h2 class="title car-selection__title" data-aos="zoom-in-up">
+            Подбор авто
+          </h2>
+          <div class="subtitle car-selection__subtitle" data-aos="zoom-in-up">
+            Наши услуги для покупателей из регионов РФ
+          </div>
+
+          <div class="car-selection__grid">
+            <div class="car-selection__context" data-aos="fade-right" data-aos-offset="300">
+              <div class="car-selection__context-title">
+                САМЫЙ БОЛЬШОЙ В СТРАНЕ РЫНОК АВТО С ПРОБЕГОМ НАХОДИТСЯ В <span>МОСКВЕ</span>
+              </div>
+              <div class="car-selection__context-text">
+                Компания "ПРОПОДБОР" предлагает помощь в приобретении недорогих машин с пробегом в столице для
+                покупателей
+                из регионов
+              </div>
+            </div>
+
+            <div class="car-selection__image" data-aos="fade-left" data-aos-offset="300">
+              <picture>
+                <source srcset="img/car-selection_image.webp" type="image/webp">
+                <img src="img/car-selection_image.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stages">
+        <div class="container stages__container">
+          <h2 class="title stages__title" data-aos="zoom-in-up">
+            Этапы работы
+          </h2>
+          <div class="subtitle stages__subtitle" data-aos="zoom-in-up">
+            Как мы работаем с иногородними клиентами
+          </div>
+
+          <ul class="stages__list">
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage1.svg" alt="">
+              </div>
+              <div class="stage__title">
+                ЗАКЛЮЧЕНИЕ ДОГОВОРА
+              </div>
+              <div class="stage__text">
+                Вы получаете договор в электронном виде и письмом Почтой России
+              </div>
+            </li>
+
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage2.svg" alt="">
+              </div>
+              <div class="stage__title">
+                ФИКСИРОВАННАЯ ПРЕДОПЛАТА
+              </div>
+              <div class="stage__text">
+                Вы вносите предоплату в размере 5000 рублей для начала подбора авто
+              </div>
+            </li>
+
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage3.svg" alt="">
+              </div>
+              <div class="stage__title">
+                МЫ ИЩЕМ И ВЫСЫЛАЕМ ОТЧЕТ КАЖДЫЙ ДЕНЬ
+              </div>
+              <div class="stage__text">
+                Осматриваем все предложения, подходящие под Ваш бюджет, с ежедневным эл. отчётом о результатах.
+              </div>
+            </li>
+
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage4.svg" alt="">
+              </div>
+              <div class="stage__title">
+                СОГЛАСОВАНИЕ С КЛИЕНТОМ
+              </div>
+              <div class="stage__text">
+                Наш автоэксперт согласовывает с Вами лучший вариант по телефону
+              </div>
+            </li>
+
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage5.svg" alt="">
+              </div>
+              <div class="stage__title">
+                ВСТРЕЧА НА ВОКЗАЛЕ ИЛИ АЭРОПОРТУ
+              </div>
+              <div class="stage__text">
+                Эксперт ожидает Вас на вокзале или в аэропорту и полностью организует встречу с продавцом
+              </div>
+            </li>
+
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage6.svg" alt="">
+              </div>
+              <div class="stage__title">
+                ОПЛАТИМ ПРОЖИВАНИЕ
+              </div>
+              <div class="stage__text">
+                Мы оплатим 1 день Вашего проживания, если нам не удалось провести сделку в этот день
+              </div>
+            </li>
+
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage7.svg" alt="">
+              </div>
+              <div class="stage__title">
+                ОСМОТР В ПРИСУТСТВИИ КЛИЕНТА
+              </div>
+              <div class="stage__text">
+                Эксперт проводит встречу с продавцом и вторичный осмотр автомобиля при Вас
+              </div>
+            </li>
+
+            <li class="stages__item stage" data-aos="fade-up" data-aos-offset="200">
+              <div class="stage__icon">
+                <img src="img/stage8.svg" alt="">
+              </div>
+              <div class="stage__title">
+                СОПРОВОЖДАЕМ СДЕЛКИ
+              </div>
+              <div class="stage__text">
+                Специалист компании сопровождает Вас во время сделки и оформления на авто с доп. проверкой документов и
+                эл. баз
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="risks">
+        <div class="container risks__container">
+          <h2 class="title risks__title" data-aos="zoom-in-up">
+            Чем вы рискуете
+          </h2>
+          <div class="subtitle risks__subtitle" data-aos="zoom-in-up">
+            Покупая авто самостоятельно?
+          </div>
+
+          <div class="risks__grid">
+            <div class="risks__context" data-aos="fade-right" data-aos-offset="250">
+              <div class="risks__context-text">
+                В подавляющем большинстве случаев услуга автоподбора экспертами компании
+                окупается уже на первоначальном этапе на 150%-200% за счет снижения цены в процессе торга! Кроме того,
+                не
+                забывайте о выгодах, которые вы получите в процессе эксплуатации машины. Мы подберем авто, требующее
+                меньше вложений и которое потом можно будет продать дороже.
+              </div>
+              <button class="risks__context-button" data-bs-toggle="modal" data-bs-target="#modalOrderSearch">
+                Узнать подробнее
+              </button>
+            </div>
+
+            <div class="risks__image" data-aos="fade-left" data-aos-offset="250">
+              <div class="risks__reason">
+                <div class="risks__reason-number">01</div>
+                <div class="risks__reason-text">Деньгами</div>
+              </div>
+              <div class="risks__reason">
+                <div class="risks__reason-number">02</div>
+                <div class="risks__reason-text">Нервами</div>
+              </div>
+              <div class="risks__reason">
+                <div class="risks__reason-number">03</div>
+                <div class="risks__reason-text">Временем</div>
+              </div>
+
+              <picture>
+                <source srcset="img/risks_image.webp" type="image/webp">
+                <img src="img/risks_image.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container faq__container">
+          <h2 class="title faq__title" data-aos="zoom-in-up">
+            Вопрос-ответ
+          </h2>
+          <div class="subtitle faq__subtitle" data-aos="zoom-in-up">
+            Ответы на 6 главных вопросов
+          </div>
+
+          <ul class="faq__list" data-aos="fade-up" data-aos-offset="300">
+            <li class="faq__item">
+              <div class="faq__question">
+                Зачем мне к вам обращаться, сам найду в интернете!
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ipsum? Beatae ut laborum omnis
+                  totam voluptate, minima itaque tempora maxime illum necessitatibus aperiam voluptas deleniti
+                  temporibus accusamus! Ab vero distinctio praesentium tempore provident commodi temporibus ullam! Quasi
+                  culpa aspernatur impedit laudantium. Sit tempore nulla cupiditate impedit, odit nam ut accusantium.
+                </div>
+              </div>
+              <div class="faq__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#question--white"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faq__item">
+              <div class="faq__question">
+                Если авто, которые Вы мне нашли, мне не нравятся?
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ipsum? Beatae ut laborum omnis
+                  totam voluptate, minima itaque tempora maxime illum necessitatibus aperiam voluptas deleniti
+                  temporibus accusamus! Ab vero distinctio praesentium tempore provident commodi temporibus ullam! Quasi
+                  culpa aspernatur impedit laudantium. Sit tempore nulla cupiditate impedit, odit nam ut accusantium.
+                </div>
+              </div>
+              <div class="faq__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#question--white"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faq__item">
+              <div class="faq__question">
+                Сколько длится подбор автомобиля?
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ipsum? Beatae ut laborum omnis
+                  totam voluptate, minima itaque tempora maxime illum necessitatibus aperiam voluptas deleniti
+                  temporibus accusamus! Ab vero distinctio praesentium tempore provident commodi temporibus ullam! Quasi
+                  culpa aspernatur impedit laudantium. Sit tempore nulla cupiditate impedit, odit nam ut accusantium.
+                </div>
+              </div>
+              <div class="faq__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#question--white"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faq__item">
+              <div class="faq__question">
+                Вы подберете мне плохую машину, лишь бы заработать на услуге!
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ipsum? Beatae ut laborum omnis
+                  totam voluptate, minima itaque tempora maxime illum necessitatibus aperiam voluptas deleniti
+                  temporibus accusamus! Ab vero distinctio praesentium tempore provident commodi temporibus ullam! Quasi
+                  culpa aspernatur impedit laudantium. Sit tempore nulla cupiditate impedit, odit nam ut accusantium.
+                </div>
+              </div>
+              <div class="faq__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#question--white"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faq__item">
+              <div class="faq__question">
+                Составляется ли договор на оказание услуг?
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ipsum? Beatae ut laborum omnis
+                  totam voluptate, minima itaque tempora maxime illum necessitatibus aperiam voluptas deleniti
+                  temporibus accusamus! Ab vero distinctio praesentium tempore provident commodi temporibus ullam! Quasi
+                  culpa aspernatur impedit laudantium. Sit tempore nulla cupiditate impedit, odit nam ut accusantium.
+                </div>
+              </div>
+              <div class="faq__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#question--white"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faq__item">
+              <div class="faq__question">
+                Как происходит оплата ваших услуг?
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ipsum? Beatae ut laborum omnis
+                  totam voluptate, minima itaque tempora maxime illum necessitatibus aperiam voluptas deleniti
+                  temporibus accusamus! Ab vero distinctio praesentium tempore provident commodi temporibus ullam! Quasi
+                  culpa aspernatur impedit laudantium. Sit tempore nulla cupiditate impedit, odit nam ut accusantium.
+                </div>
+              </div>
+              <div class="faq__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#question--white"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+
+          <div class="faq-mob">
+            <ul class="faq-mob__list">
+              <li class="faq-mob__item">
+                <div class="faq-mob__question collapsed" data-bs-toggle="collapse" data-bs-target="#question1"
+                  aria-expanded="false">
+                  Зачем мне к вам обращаться, сам найду в интернете!
+                </div>
+                <div class="collapse" id="question1">
+                  <div class="faq-mob__answer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque ipsam tenetur ab placeat
+                    natus, maxime saepe enim excepturi autem illo quas omnis odit nesciunt culpa incidunt itaque earum
+                    architecto?
+                  </div>
+                </div>
+              </li>
+
+              <li class="faq-mob__item">
+                <div class="faq-mob__question collapsed" data-bs-toggle="collapse" data-bs-target="#question2"
+                  aria-expanded="false">
+                  Если авто, которые Вы мне нашли, мне не нравятся?
+                </div>
+                <div class="collapse" id="question2">
+                  <div class="faq-mob__answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias labore recusandae et quaerat
+                    itaque ut soluta voluptate, deleniti sequi alias nam excepturi cupiditate molestiae in, eligendi
+                    sunt
+                    mollitia iste porro.
+                  </div>
+                </div>
+              </li>
+
+              <li class="faq-mob__item">
+                <div class="faq-mob__question collapsed" data-bs-toggle="collapse" data-bs-target="#question3"
+                  aria-expanded="false">
+                  Сколько длится подбор автомобиля?
+                </div>
+                <div class="collapse" id="question3">
+                  <div class="faq-mob__answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias labore recusandae et quaerat
+                    itaque ut soluta voluptate, deleniti sequi alias nam excepturi cupiditate molestiae in, eligendi
+                    sunt
+                    mollitia iste porro.
+                  </div>
+                </div>
+              </li>
+
+              <li class="faq-mob__item">
+                <div class="faq-mob__question collapsed" data-bs-toggle="collapse" data-bs-target="#question4"
+                  aria-expanded="false">
+                  Вы подберете мне плохую машину, лишь бы заработать на услуге!
+                </div>
+                <div class="collapse" id="question4">
+                  <div class="faq-mob__answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias labore recusandae et quaerat
+                    itaque ut soluta voluptate, deleniti sequi alias nam excepturi cupiditate molestiae in, eligendi
+                    sunt
+                    mollitia iste porro.
+                  </div>
+                </div>
+              </li>
+
+              <li class="faq-mob__item">
+                <div class="faq-mob__question collapsed" data-bs-toggle="collapse" data-bs-target="#question5"
+                  aria-expanded="false">
+                  Составляется ли договор на оказание услуг?
+                </div>
+                <div class="collapse" id="question5">
+                  <div class="faq-mob__answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias labore recusandae et quaerat
+                    itaque ut soluta voluptate, deleniti sequi alias nam excepturi cupiditate molestiae in, eligendi
+                    sunt
+                    mollitia iste porro.
+                  </div>
+                </div>
+              </li>
+
+              <li class="faq-mob__item">
+                <div class="faq-mob__question collapsed" data-bs-toggle="collapse" data-bs-target="#question6"
+                  aria-expanded="false">
+                  Как происходит оплата ваших услуг?
+                </div>
+                <div class="collapse" id="question6">
+                  <div class="faq-mob__answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias labore recusandae et quaerat
+                    itaque ut soluta voluptate, deleniti sequi alias nam excepturi cupiditate molestiae in, eligendi
+                    sunt
+                    mollitia iste porro.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="promotions">
+        <div class="container promotions__container">
+          <h2 class="title promotions__title" data-aos="zoom-in-up">
+            Акции и скидки
+          </h2>
+          <div class="subtitle promotions__subtitle" data-aos="zoom-in-up">
+            Мы постоянно делаем приятные бонусы нашим клиентам
+          </div>
+
+          <ul class="promotions__list">
+            <li class="promotions__item promotion" data-aos="zoom-in" data-aos-offset="300">
+              <a href="#" class="promotion__link">
+                <img src="img/promotion1.jpg" alt="" class="promotion__img">
+                <div class="promotion__title">
+                  скидка на автоподбор для участников вов и лиц приравненных к ним
+                </div>
+              </a>
+            </li>
+
+            <li class="promotions__item promotion" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="300">
+              <a href="#" class="promotion__link">
+                <img src="img/promotion2.jpg" alt="" class="promotion__img">
+                <div class="promotion__title">
+                  порекомендуйте нас друзьям и получите подарок!
+                </div>
+              </a>
+            </li>
+
+            <li class="promotions__item promotion" data-aos="zoom-in" data-aos-delay="600" data-aos-offset="300">
+              <a href="#" class="promotion__link">
+                <img src="img/promotion3.jpg" alt="" class="promotion__img">
+                <div class="promotion__title">
+                  только до конца этого месяца действует скидка в 10% новым клиентам!
+                </div>
+                <div class="promotion__label">
+                  СКИДКА МЕСЯЦА!
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="home-seo-we-professionals">
+        <div class="container home-seo-we-professionals__container">
+          <h2 class="title home-seo-we-professionals__title">
+            Мы профессионалы
+          </h2>
+
+          <div class="home-seo-we-professionals__stats">
+            <div class="home-seo-we-professionals__stats-item">
+              <div class="home-seo-we-professionals__stats-title">
+                500
+                <svg>
+                  <use
+                    xlink:href="https://selectgo.ru/wp-content/themes/selectgo/assets/img/sprite.svg#double-chevron-right">
+                  </use>
+                </svg>
+              </div>
+              <div class="home-seo-we-professionals__stats-text">
+                УСПЕШНО подобранных автомобилей
+              </div>
+            </div>
+
+            <div class="home-seo-we-professionals__stats-item">
+              <div class="home-seo-we-professionals__stats-title">
+                7
+                <svg>
+                  <use
+                    xlink:href="https://selectgo.ru/wp-content/themes/selectgo/assets/img/sprite.svg#double-chevron-right">
+                  </use>
+                </svg>
+              </div>
+              <div class="home-seo-we-professionals__stats-text">
+                ЛЕТ НА РЫНКЕ подбора автомобилей
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="contact-form contact-form--home-second">
+        <div class="container contact-form__container">
+          <div class="contact-form__title title" data-aos="zoom-in-up">
+            Оставьте заявку
+          </div>
+          <div class="contact-form__subtitle subtitle" data-aos="zoom-in-up">
+            Заполните форму заявки и специалист свяжется с Вами в течении 10 мин.
+          </div>
+
+          <div class="contact-form__grid">
+            <div class="contact-form__image" data-aos="fade-right" data-aos-offset="300">
+              <img srcset="img/contact-form_image.png 885w, img/contact-form_image.jpg 370w"
+                sizes="(max-width: 1199px) 370px, (min-width: 1200px) 885px">
+            </div>
+
+            <form class="contact-form__form" data-aos="fade-left" data-aos-offset="200">
+              <div class="contact-form__form-group">
+                <input type="text" class="input input--pencil contact-form__input"
+                  placeholder="Интересующая Вас марка авто, модель, год">
+              </div>
+              <div class="contact-form__form-group">
+                <input type="text" class="input input--name contact-form__input" placeholder="Ваше имя">
+              </div>
+              <div class="contact-form__form-group">
+                <input type="tel" class="input input--phone contact-form__input" placeholder="Введите Ваш телефон">
+              </div>
+
+              <button type="submit" class="contact-form__button">
+                оставить заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="instagram">
+        <div class="container instagram__container">
+          <h2 class="title instagram__title" data-aos="zoom-in-up">
+            @select&Go
+          </h2>
+          <div class="subtitle instagram__subtitle" data-aos="zoom-in-up">
+            Подпишитесь на наш Instagram
+          </div>
+
+          <div class="instagram__carousel" data-aos="fade-up" data-aos-offset="200">
+            <button class="instagram__navigation-prev">
+              <svg>
+                <use xlink:href="img/sprite.svg#chevron-left"></use>
+              </svg>
+            </button>
+            <button class="instagram__navigation-next">
+              <svg>
+                <use xlink:href="img/sprite.svg#chevron-right"></use>
+              </svg>
+            </button>
+
+            <div class="instagram__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst1.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst2.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="$" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst3.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst4.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst5.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst6.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst7.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="instagram__slide">
+                    <div class="instagram__multiple-images"></div>
+
+                    <img data-src="img/inst8.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                    <div class="instagram__context">
+                      <div class="instagram__username">
+                        @selectgoo
+                      </div>
+                      <div class="instagram__hashtags">
+                        #автоподбор #автоподбормосква #купитьавтомосква
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-aos="fade-down" data-aos-offset="300">
+      <div class="footer__top top-footer">
+        <div class="container top-footer__container">
+          <div class="top-footer__title">
+            Контакты
+          </div>
+          <div class="top-footer__subtitle">
+            Вы можете связаться с нами удобным для вас способом
+          </div>
+
+          <div class="top-footer__columns">
+            <div class="top-footer__column">
+              <div class="footer-call">
+                <div class="footer-call__icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                </div>
+
+                <div class="footer-call__context">
+                  <div class="footer-call__text">
+                    Контакты колл-центра:
+                  </div>
+
+                  <a href="tel:+74952225577" class="footer-call__link">+7 (495) 222 55 77</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="top-footer__column">
+              <div class="footer-email">
+                <div class="footer-email__icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#email"></use>
+                  </svg>
+                </div>
+
+                <div class="footer-email__context">
+                  <div class="footer-email__text">
+                    Email:
+                  </div>
+
+                  <a href="mailto:contact@selectgo.ru" class="footer-email__link">contact@selectgo.ru</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="top-footer__column">
+              <div class="footer-social">
+                <div class="footer-social__icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#internet"></use>
+                  </svg>
+                </div>
+
+                <div class="footer-social__context">
+                  <div class="footer-social__text">
+                    Мы в соц. сетях:
+                  </div>
+
+                  <div class="social social--footer">
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#telegram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#viber"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="top-footer__column">
+              <div class="footer-cta">
+                <button class="footer-cta__button">
+                  заказать звонок
+                </button>
+              </div>
+            </div>
+
+            <div class="top-footer__column">
+              <div class="footer-menu">
+                <div class="footer-menu__column">
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      главная
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      О компании
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      калькулятор
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      отзывы
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      акции
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      вакансии
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      контакты
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-menu__column">
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      база знаний
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      оплата
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      автоподбор
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      автовыкуп
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      помощь в продаже
+                    </a>
+                  </div>
+                  <div class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      машины на продаже
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="top-footer__column">
+              <a href="#" class="top-footer__haraba">
+                <img src="img/haraba.png" alt="">
+              </a>
+
+              <div class="top-footer__accepted-payments">
+                <img src="img/accepted_payments.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="top-footer__marker">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom bottom-footer">
+        <div class="container bottom-footer__container">
+          <div class="bottom-footer__column">
+            <a href="#" class="bottom-footer__link">Политика конфиденциальности</a>
+          </div>
+
+          <div class="bottom-footer__column">
+            <div class="copyright">
+              Г2012-2021 &copy; <a href="#" class="bottom-footer__link">Select&GO</a>
+            </div>
+            ИНН&nbsp;2978885118 | ОГРН&nbsp;314385088667180
+          </div>
+
+          <div class="bottom-footer__column">
+            Design by <a href="#" class="bottom-footer__link">Elena Rybchuk</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    @include('html/right-menu.html')
+  </div>
+
+  @include('html/modals.html')
+  @include('html/offcanvas.html')
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      disable: 'phone'
+    });
+  </script>
+</body>
+
+</html>

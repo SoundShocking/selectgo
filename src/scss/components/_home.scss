@@ -2,9 +2,11 @@
   overflow: hidden;
   height: 1416px;
   padding-top: 290px;
+  position: relative;
+  z-index: 1;
 
   .webp & {
-    background: url('../img/hero--home_bg.webp') center center no-repeat;
+    background: url('../img/hero--home_bg.png') center center no-repeat;
 
     @include sm {
       // background: url('../img/risks_image2.webp'),
@@ -18,7 +20,7 @@
   }
 
   .no-webp & {
-    background: url('../img/hero--home_bg.jpg') center center no-repeat;
+    background: url('../img/hero--home_bg.png') center center no-repeat;
 
     @include sm {
       // background: url('../img/risks_image2.png'),
@@ -241,6 +243,10 @@
     }
   }
 
+  &--home-seo {
+    margin-top: -610px;
+  }
+
   &__container {
     background-color: var(--color-white);
     box-shadow: 0 20px 50px rgba(7, 21, 64, 0.1);
@@ -367,9 +373,7 @@
       transform: rotate(180deg);
       writing-mode: vertical-lr;
       position: absolute;
-      // top: 280px;
-      // right: -600px;
-      top: -70px;
+      top: -40px;
       right: -250px;
     }
   }
@@ -453,7 +457,6 @@
 .services {
   margin-top: -30px;
   height: 2238px;
-  // background: url('../img/services_bg.jpg') center center no-repeat;
   padding-top: 280px;
 
   .webp & {
@@ -462,6 +465,18 @@
 
   .no-webp & {
     background: url('../img/services_bg.jpg') center center no-repeat;
+  }
+
+  &--home-seo {
+    height: 1847px;
+
+    .webp & {
+      background: url('../img/services_bg--moscow.webp') center center no-repeat;
+    }
+
+    .no-webp & {
+      background: url('../img/services_bg--moscow.jpg') center center no-repeat;
+    }
   }
 
   &__container {
@@ -1052,7 +1067,19 @@
 }
 
 .tariffs {
+  $self: &;
+
   margin-top: 50px;
+
+  &--home-seo {
+    margin-top: -550px;
+
+    #{$self}__container {
+      &::before {
+        display: none;
+      }
+    }
+  }
 
   &__container {
     position: relative;
@@ -1076,9 +1103,37 @@
   }
 
   &__title {
+    &--home-seo {
+      text-transform: uppercase;
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 800;
+      color: var(--color-black);
+      position: absolute;
+      top: 50%;
+      left: -270px;
+      transform: rotate(-90deg) translateY(-50%);
+      // transform-origin: bottom;
+      margin: 0;
+      padding: 0;
+      padding-left: 70px;
+
+      &::before {
+        content: '';
+        height: 2px;
+        width: 50px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 
   &__subtitle {
+    &--home-seo {
+      margin-top: 25px;
+    }
   }
 
   &__grid {
@@ -2563,6 +2618,7 @@
 
   &__img {
     display: block;
+    height: auto;
   }
 
   &__title {
@@ -3087,6 +3143,8 @@
   $self: &;
 
   margin-top: -470px;
+  position: relative;
+  z-index: 2;
 
   @include sm {
     margin-top: 50px;
