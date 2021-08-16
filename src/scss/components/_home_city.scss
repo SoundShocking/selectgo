@@ -13,6 +13,19 @@
       no-repeat;
   }
 
+  @include lg {
+    margin-bottom: 200px;
+  }
+
+  @include sm {
+    margin-top: 50px;
+    height: auto;
+    padding: 80px 0 50px;
+    background: linear-gradient(180deg, #123652 0, #101a2d 100%) !important;
+    clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 100%);
+    margin-bottom: 0;
+  }
+
   &__container {
   }
 
@@ -26,6 +39,11 @@
     line-height: 30px;
     font-weight: 300;
     color: var(--color-white);
+
+    @include md {
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     p {
       &:not(:last-child) {
@@ -48,6 +66,14 @@
   .no-webp & {
     background: url('../img/home-seo-we-professionals.jpg') center center
       no-repeat;
+  }
+
+  @include sm {
+    height: auto;
+    margin-top: 50px;
+    padding: 80px 0 50px;
+    background: linear-gradient(180deg, #123652 0, #101a2d 100%) !important;
+    clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
   }
 
   &__container {
@@ -145,6 +171,17 @@
     background: url('../img/home-seo-city_bg.jpg') center center no-repeat;
   }
 
+  @include md {
+    margin-top: 50px;
+    height: auto;
+    background: linear-gradient(
+      180deg,
+      rgba(241, 247, 251, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ) !important;
+    padding-bottom: 50px;
+  }
+
   &__container {
   }
 
@@ -152,6 +189,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
+
+    @include md {
+      gap: 25px;
+    }
+
+    @include sm {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__left {
@@ -180,9 +225,14 @@
     position: relative;
     z-index: 1;
 
+    @include md {
+      margin-top: 0;
+    }
+
     img {
       max-width: 100%;
       display: block;
+      height: auto;
     }
   }
 
@@ -195,6 +245,21 @@
       &:not(:last-child) {
         margin: 0 0 35px;
       }
+    }
+
+    @include md {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.page-template-main-seo-city {
+  .car-selection {
+    margin-top: -900px;
+
+    @include sm {
+      margin-top: 0;
     }
   }
 }

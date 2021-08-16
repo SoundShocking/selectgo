@@ -6,7 +6,7 @@
   z-index: 1;
 
   .webp & {
-    background: url('../img/hero--home_bg.png') center center no-repeat;
+    background: url('../img/hero--home_bg.webp') center center no-repeat;
 
     @include sm {
       // background: url('../img/risks_image2.webp'),
@@ -65,7 +65,7 @@
     }
 
     @include sm {
-      padding: 50px 15px 0;
+      padding: 100px 15px 0;
       // display: flex;
       // flex-direction: column;
       // justify-content: center;
@@ -245,6 +245,10 @@
 
   &--home-seo {
     margin-top: -610px;
+
+    @include sm {
+      margin-top: 0;
+    }
   }
 
   &__container {
@@ -1078,6 +1082,10 @@
       &::before {
         display: none;
       }
+    }
+
+    @include sm {
+      margin-top: 50px;
     }
   }
 
@@ -1948,7 +1956,7 @@
 
       @include md {
         margin-top: 25px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
       }
     }
@@ -2163,8 +2171,8 @@
       font-weight: 300;
       color: var(--color-white);
 
-      @include sm {
-        font-size: 18px;
+      @include md {
+        font-size: 16px;
         line-height: 24px;
       }
     }
@@ -2300,6 +2308,10 @@
 
   @include lg {
     margin-top: -850px;
+  }
+
+  @include md {
+    margin-top: -900px;
   }
 
   @include sm {
@@ -2501,7 +2513,8 @@
 
   &__answer {
     padding-bottom: 15px;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 300;
   }
 
