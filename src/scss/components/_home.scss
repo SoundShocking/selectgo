@@ -1997,6 +1997,10 @@
 
     &--home-seo-car {
       right: -303px;
+
+      @include md {
+        right: initial;
+      }
     }
 
     picture,

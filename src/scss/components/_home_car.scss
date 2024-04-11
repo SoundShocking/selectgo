@@ -1,6 +1,10 @@
 .home-seo-car {
   margin-top: 130px;
 
+  @include lg {
+    margin-top: 50px;
+  }
+
   &__container {
     position: relative;
 
@@ -24,6 +28,15 @@
     display: grid;
     grid-template-columns: 469px 1fr;
     gap: 50px;
+
+    @include lg {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    @include md {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__left {
@@ -34,6 +47,7 @@
 
   &__photo {
     position: relative;
+    text-align: center;
 
     &::before {
       content: '';
@@ -44,6 +58,14 @@
       height: 402px;
       background: url('../img/home-seo-car_bg.png') center center no-repeat;
       z-index: -1;
+
+      @include md {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+      }
     }
 
     img {
@@ -69,6 +91,14 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       margin: 0;
+
+      @include lg {
+        font-size: 40px;
+      }
+
+      @include sm {
+        font-size: 30px;
+      }
     }
   }
 
@@ -80,6 +110,11 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+
+    @include md {
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     p {
       &:not(:last-child) {
@@ -102,5 +137,78 @@
     text-transform: uppercase;
     margin-top: 100px;
     text-align: center;
+
+    @include lg {
+      font-size: 150px;
+      margin-top: 50px;
+    }
+
+    @include md {
+      font-size: 120px;
+    }
+
+    @include sm {
+      font-size: 56px;
+    }
+  }
+}
+
+.why-popular-service {
+  margin-top: 100px;
+  padding-bottom: 130px;
+
+  @include lg {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include sm {
+    background: linear-gradient(180deg, #f1f7fb 0, #fff 100%) !important;
+  }
+
+  .webp & {
+    background: url('../img/why-popular-service_bg.webp') bottom center
+      no-repeat;
+  }
+
+  .no-webp & {
+    background: url('../img/why-popular-service_bg.jpg') bottom center no-repeat;
+  }
+
+  &__container {
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include sm {
+      font-size: 24px;
+    }
+
+    span {
+      color: var(--color-blue);
+    }
+  }
+
+  &__text {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+
+    @include md {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin: 0 0 35px;
+      }
+    }
   }
 }
